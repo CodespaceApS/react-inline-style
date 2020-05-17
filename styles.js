@@ -1,3 +1,16 @@
+const secureExtension = (_x) => {
+  if (!_x) return null
+  const x = _x.toString()
+
+  const extensions = [
+    'px', 'rem', '%',
+  ]
+  if (extensions.filter((y) => x.indexOf(y) > -1).length > -1) {
+    return x
+  }
+  return x + 'px'
+}
+
 module.exports = {
   fill: (x) => [
     ['position', 'absolute'],
