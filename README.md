@@ -1,6 +1,6 @@
-# react-inline-style
+# react-lazy-style
 
-react-inline-style is a react native style library to speed up the development.
+react-lazy-style is a react native style library to speed up the development.
 
 In the example i'm calling my div for View, You dont have to do this. You can make a Div component instend.
 
@@ -8,12 +8,12 @@ In the example i'm calling my div for View, You dont have to do this. You can ma
 
 Install with npm
 ```bash
-npm install react-inline-style
+npm install react-lazy-style
 ```
 
 Install with yarn
 ```bash
-yarn add react-inline-style
+yarn add react-lazy-style
 ```
 
 
@@ -23,7 +23,7 @@ Create a style.js file
 #### style.js
 ```
 import React from 'react'
-import initInline from 'react-inline-style'
+import initInline from 'react-lazy-style'
 const inline = initInline({})
 
 export const colors = {
@@ -92,7 +92,7 @@ In your style.js file you can extend the style functions.
 
 In the example we are adding the style prop green.
 ```
-import initInline from 'react-inline-style'
+import initInline from 'react-lazy-style'
 
 const inline = initInline({
   'green': _ => ['backgroundColor', 'green']
@@ -100,7 +100,7 @@ const inline = initInline({
 ```
 In the example we are adding a multi style prop dp(default padding).
 ```
-import initInline from 'react-inline-style'
+import initInline from 'react-lazy-style'
 
 const inline = initInline({
   'dp': _ => [
@@ -113,7 +113,7 @@ const inline = initInline({
 ## Contributing
 Fell free to add a pull request to add more prestyle props.
 
-[read all the style props here.](https://github.com/CodespaceApS/react-inline-style/blob/master/styles.js)
+[read all the style props here.](https://github.com/CodespaceApS/react-lazy-style/blob/master/styles.js)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
