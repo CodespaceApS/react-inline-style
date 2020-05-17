@@ -61,7 +61,7 @@ import React from 'react'
 import { View, Text } from './style'
 
 export default (onClick = () => console.log('no touch handler')) => (
-    <View onClick={onClick} s="bg:green|w:100|h:50|centerCenter|shadow:1">
+    <View pointer onClick={onClick} s="bg:green|w:100|h:50|centerCenter|shadow:1">
       <Text>Green button</Text>
     </View>
 )
