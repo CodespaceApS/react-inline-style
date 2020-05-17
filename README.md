@@ -31,26 +31,26 @@ export const colors = {
 }
 
 export const Text = ({ children, ...props }) => (
-  <p {...appendStyles(props)}>
+  <p {...inline(props)}>
     {children || null}
   </p>
 )
 export const View = ({ children, ...props }) => (
-  <div {...appendStyles(props)}>
+  <div {...inline(props)}>
     {children || null}
   </div>
 )
 export const Image = ({ children, ...props }) => (
-  <img {...appendStyles(props)} />
+  <img {...inline(props)} />
 )
 
 export const Span = ({ children, ...props }) => (
-  <span {...appendStyles(props)}>
+  <span {...inline(props)}>
     {children || null}
   </span>
 )
 export const Button = ({ children, ...props }) => (
-  <button {...appendStyles(props)}>
+  <button {...inline(props)}>
     {children || null}
   </button>
 )
