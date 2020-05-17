@@ -44,7 +44,11 @@ module.exports = (customStyles = {}) => {
           acc[x] = props[x]
         }
         return acc
-      }, { style: {} })
+      }, {
+        style: {
+          'display': 'flex', 'boxSizing': 'border-box'
+        }
+      })
     return resultProps
   }
 
