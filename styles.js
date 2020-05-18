@@ -36,7 +36,7 @@ module.exports = {
   txt: (x) => ['text-align', x],
   bgSize: (x) => ['backgroundSize', x || 'cover'],
   wrap: () => ['flexWrap', 'wrap'],
-  img: (url) => console.log(url) || [
+  img: (url) => [
     ['backgroundImage', `url(${url})`],
     ['backgroundSize', 'cover'],
     ['backgroundPosition', 'center center'],
